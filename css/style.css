@@ -1,0 +1,55 @@
+/* Importação das Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CORES */
+:root {
+    --azulPetroleo: #355C7D;
+    --destaque: #E2B56E;
+    --apoio: #E5E5E5;
+    --texto: #1C2833;
+
+    --white: #fff;
+    --black: #000;
+}
+
+/* FONTES */
+:root {
+    --titulo: "Raleway", sans-serif;
+    --texto: "Open Sans", sans-serif;
+}
+
+/* Geral */
+ul {
+    list-style: none;
+}
+
+
+
+/* HEADER */
+header {
+    background: var(--azulPetroleo);
+    color: var(--white);
+}
+
+header a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.up-side {
+    font-size: .8em;
+    border-bottom: 1px solid var(--white);
+}
+
+.social-media i {
+    font-size: 1.2em;
+}
+
+/* Home */
+.home {
+    background-image: url(../img/teste-felp.PNG);
+    height: 84vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

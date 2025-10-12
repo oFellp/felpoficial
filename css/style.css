@@ -1,57 +1,101 @@
 /* Importação das Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CORES */
 :root {
-    --mainColor: #1A1A1A;
-    --colorTitle: #E86A33;
-    --colorText: #F0F0F0;
-    --secondColor: #8B2E3E;
-    --colorFooter: #4C4C4C; /* Icones tambem */
+  --mainColor: #1A1A1A;
+  --bgSections: #121212;
+  --colorTitle: #E86A33;
+  --colorText: #F0F0F0;
+  --secondColor: #8B2E3E;
+  --colorFooter: #4C4C4C;
+  /* Icones tambem */
 
-    --white: #fff;
-    --black: #000;
+  --white: #fff;
+  --black: #000;
 }
 
 /* FONTES */
 :root {
-    --titulo: "Raleway", sans-serif;
-    --texto: "Open Sans", sans-serif;
+  /* --titulo: "Raleway", sans-serif; */
+  --fontTitleHeader: "Cinzel", serif;
+  --fontMenu: "Poppins", sans-serif;
+  --fontTitle: "Oswald", sans-serif;
+  --fontText: "Open Sans", sans-serif;
+  --fontFooter: "Work Sans", sans-serif;
 }
 
 /* Geral */
-body {
-    background: var(--mainColor);
+html {
+  scroll-padding-top: 215px;
 }
 
+body {
+  background-color: var(--bgSections);
+}
+
+
 ul {
-    list-style: none;
+  list-style: none;
+}
+
+.title-section {
+  color: var(--colorText);
+  font-family: var(--fontFooter);
+  font-size: 3.5em;
+}
+
+.subtitle-section {
+  color: var(--secondColor);
+  font-family: var(--fontTitle);
+}
+
+.paragraph-section {
+  color: var(--colorText);
+  line-height: 1.8em;
 }
 
 
 
 /* HEADER */
+
 header {
-    background: var(--mainColor);
-    color: var(--white);
+  background: var(--mainColor);
+  color: var(--white);
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.4); 
 }
 
 header a {
-    color: var(--white);
-    text-decoration: none;
+  color: var(--white);
+  text-decoration: none;
 }
 
 .up-side {
-    font-size: .8em;
-    border-bottom: 2px solid var(--secondColor);
+  font-size: .8em;
+  border-bottom: 2px solid var(--secondColor);
 }
 
 .social-media i {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 
 /* menu */
+.header-title {
+  font-family: var(--fontTitle);
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.nav-link {
+  font-family: var(--fontMenu);
+}
+
+.navbar-nav a:hover {
+  transform: translateY(-3px);
+  transition: .4s;
+}
+
 .menu-contact {
   display: none;
 }
@@ -112,26 +156,60 @@ header a {
   top: 0;
 }
 
-
-
-
-/* HOME */
-.home {
-    background-image: url(../img/home/img-main.PNG);
-    height: 85vh;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
 /* MAIN */
-.occupation-space {
-    height: 85vh;
+
+main {
+  background: url(../img/home/img-main.PNG);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 86vh;
+  margin-top: 8em;
+}
+
+.occupation-main {
+  height: 95vh;
+}
+
+
+/* ALBUNS */
+.section-album {
+  background-image: url(../img/albuns/bg-album.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.links-streaming {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px 20px;
+  border-radius: 5px;
+  display: flex;
+  gap: 23px;
 }
 
 
 
+.links-streaming a i {
+  font-size: 2em;
+}
+
+.spotify-icon {
+  color: #1DD05D;
+}
+
+.youtube-icon {
+  color: #F70000;
+}
 
 
 
@@ -147,10 +225,11 @@ header a {
   }
 }
 
+
 @media (max-width: 485px) {
-    header {
-        border-bottom: 2px solid var(--secondColor);
-    }
+  header {
+    border-bottom: 2px solid var(--secondColor);
+  }
 
   .up-side {
     display: none !important;
@@ -171,5 +250,10 @@ header a {
 
   .menu-contact i {
     font-size: 1.2em;
+  }
+
+  /* Album */
+  .links-streaming a i {
+    font-size: 1.7em;
   }
 }

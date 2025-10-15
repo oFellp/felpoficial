@@ -55,7 +55,7 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="#history">História</a></li>
                     <li class="nav-item"><a class="nav-link" href="#albuns">Álbuns</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Perguntas Frequentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Plataformas</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                 </ul>
 
@@ -91,13 +91,13 @@
 
 
         <!-- História -->
-        <section id="history" class="history container">
+        <section id="history" class="history container pb-4">
 
             <div class="row d-flex">
 
                 <!-- img -->
                 <div class="col-12 col-md-6">
-                    <img src="img/history/img-history.PNG" alt="" class="img-fluid rounded">
+                    <img src="img/history/img-history1.jpg" alt="" class="img-fluid rounded">
                 </div>
 
                 <!-- Títulos e história -->
@@ -142,18 +142,19 @@
                 <div class="carousel-inner">
 
                     <!-- Album 1 -->
-                    <div class="carousel-item active">
-                        <img src="img/home/img-main.PNG" class="d-block w-100" alt="Capa do Álbum 1">
+                    <div class="carousel-item active" data-aos="zoom-in" data-aos-delay="200">
+                        <!-- Imagem do album -->
+                        <img src="img/albuns/img-album1.PNG" class="d-block w-100" alt="Capa do Álbum 1">
 
                         <div class="links-streaming">
                             <!-- Spotify -->
                             <a href="https://open.spotify.com/intl-pt/album/3aBOwWmf9fG6CkzzaoSfxB?si=OaR4uDDkS3eX7XBArVMZdg"
-                                target="_blank">
+                                target="_blank" data-aos="fade-down">
                                 <i class="bi bi-spotify spotify-icon"></i>
                             </a>
 
                             <!-- Youtube -->
-                            <a href="https://www.youtube.com/@felp_of" target="_blank">
+                            <a href="https://www.youtube.com/@felp_of" target="_blank" data-aos="fade-up">
                                 <i class="bi bi-youtube youtube-icon"></i>
                             </a>
                         </div>
@@ -174,10 +175,133 @@
             </div>
         </section>
 
+
+        <!-- PLATAFORMAS -->
+
+        <section id="plataformas" class="py-1 text-center text-white">
+            <div class="container">
+                <h4 class="subtitle-section text-center pt-1 pb-2">Ouça agora nas</h4>
+                <h1 class="title-section text-center pb-4">Plataformas</h1>
+
+                <div class="row justify-content-center g-4">
+                    <!-- CARD 1 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://open.spotify.com/intl-pt/album/3aBOwWmf9fG6CkzzaoSfxB?si=SA654FdaQDSN8EfIdckz3A"
+                            class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/spotify-logo.png" alt="Spotify" class="plataforma-logo mb-3">
+                                <p>Spotify</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://www.youtube.com/watch?v=6uNOgTUTmpA&list=PLcg01xO2JGVzX06rP9KmuHeTxNPzrhW3v"
+                            class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/youtube-logo.png" alt="YouTube" class="plataforma-logo mb-3">
+                                <p>YouTube</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://www.deezer.com/br/album/822372521" class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/deezer-logo.png" alt="Deezer" class="plataforma-logo mb-3">
+                                <p>Deezer</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://music.amazon.com/albums/B0FRB2G8NJ?ref=dm_ff_amazonmusic_3p&tag=featurefmbr-20"
+                            class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/amazon-music-logo.png" alt="Apple Music"
+                                    class="plataforma-logo mb-3">
+                                <p>Amazon Music</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://music.apple.com/br/album/in%C3%ADcio-meio-e-fim-vol-1-single/1840203509?at=11lqQE&ct=FFM_3b180f1632ad847316dec312dbf4b4a5&ls=1"
+                            class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/apple-music-logo.png" alt="Amazon Music"
+                                    class="plataforma-logo mb-3">
+                                <p>Apple Music</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- CARD 6 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://music.apple.com/br/album/in%C3%ADcio-meio-e-fim-vol-1-single/1840203509"
+                            class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/itune-logo.png" alt="SoundCloud" class="plataforma-logo mb-3">
+                                <p>Itunes Store</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- CARD 7 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://tidal.com/album/461020552" class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/Tidal-Logo.png" alt="Tidal" class="plataforma-logo mb-3">
+                                <p>Tidal</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- CARD 8 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://www.boomplay.com/albums/116437410?srModel=openapi_featurefm&ffm=FFM_443646075cfdec1191d1b5f2910c45fc"
+                            class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/boomplay.png" alt="Napster" class="plataforma-logo mb-3">
+                                <p>Boomplay</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- CARD 9 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://play.anghami.com/album/1074753693?refer=featurefm&ffm=FFM_7cbaf7a83159c8bf3404c8fa0e7c9b83"
+                            class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/anghami-logo.png" alt="Audiomack"
+                                    class="plataforma-logo mb-3">
+                                <p>Anghami</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- CARD 10 -->
+                    <div class="col-6 col-lg-2">
+                        <a href="https://www.pandora.com/restricted" class="card plataforma-card" target="_blank">
+                            <div class="card-body">
+                                <img src="img/plataformas/pandora-logo.png" alt="Bandcamp" class="plataforma-logo mb-3">
+                                <p>Pandora</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
 
-    
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

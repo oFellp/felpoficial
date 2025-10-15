@@ -62,7 +62,7 @@ ul {
 header {
   background: var(--mainColor);
   color: var(--white);
-  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.4);
 }
 
 header a {
@@ -159,7 +159,7 @@ header a {
 /* MAIN */
 
 main {
-  background: url(../img/home/img-main.PNG);
+  background: url(../img/home/img-main1.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,7 +174,8 @@ main {
 
 /* ALBUNS */
 .section-album {
-  background-image: url(../img/albuns/bg-album.jpg);
+  /* background-image: url(../img/albuns/bg-album.jpg); */
+  background: url(../img/albuns/bg-album.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,14 +191,12 @@ main {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #000000b3;
   padding: 8px 20px;
   border-radius: 5px;
   display: flex;
   gap: 23px;
 }
-
-
 
 .links-streaming a i {
   font-size: 2em;
@@ -211,11 +210,52 @@ main {
   color: #F70000;
 }
 
+/* PLATAFORMAS */
+#plataformas {
+  background: var(--bgSections);
+}
+
+.plataforma-card {
+  background-color: #111;
+  border: 1px solid #222;
+  border-radius: 1rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.plataforma-card:hover {
+  transform: scale(1.05);
+  border-color: var(--white);
+  box-shadow: 0 0 15px #ffffff1a;
+}
+
+.plataforma-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: brightness(0.95);
+  transition: 0.3s;
+}
+
+.plataforma-card:hover .plataforma-logo {
+  filter: brightness(1.2);
+}
+
+
 
 
 
 
 /* RESPONSIVIDADE */
+
+/* Plataformas */
+@media (min-width: 992px) {
+  .col-lg-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
 
 /* Menu mobile */
 @media (max-width: 991px) {
@@ -223,6 +263,16 @@ main {
     padding: 0.8rem;
     display: block;
   }
+
+  main {
+    background: url(../img/home/img-main.PNG);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 86vh;
+    margin-top: 8em;
+  }
+
 }
 
 

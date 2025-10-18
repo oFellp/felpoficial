@@ -34,6 +34,10 @@ body {
   background-color: var(--bgSections);
 }
 
+a {
+  text-decoration: none;
+}
+
 
 ul {
   list-style: none;
@@ -167,6 +171,7 @@ main {
   margin-top: 8em;
 }
 
+
 .occupation-main {
   height: 95vh;
 }
@@ -174,7 +179,6 @@ main {
 
 /* ALBUNS */
 .section-album {
-  /* background-image: url(../img/albuns/bg-album.jpg); */
   background: url(../img/albuns/bg-album.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -240,6 +244,41 @@ main {
 
 .plataforma-card:hover .plataforma-logo {
   filter: brightness(1.2);
+}
+
+
+/* RODAPÉ */
+footer {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--fontFooter);
+}
+
+footer a {
+  color: var(--colorFooter);
+  transition: .4s;
+}
+
+footer a:hover {
+  color: var(--colorText);
+}
+
+.icon-footer {
+  font-size: 1.4em;
+}
+
+
+.links-footer a {
+  margin-bottom: .8em;
+}
+
+.under-footer {
+  border-top: 2px solid var(--white);
+  font-size: .9em;
+}
+
+.text-developer {
+  text-decoration: underline;
 }
 
 

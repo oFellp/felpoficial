@@ -4,106 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Felp</title>
 
-    <!-- Metas -->
-    <meta name="description"
-        content="Felp é um artista de Osasco-SP que traz a essência do R&B para o Brasil. Conheça sua história e ouça seus álbuns nas principais plataformas digitais.">
-    <meta name="keywords"
-        content="Felp, música, R&B, artista, Osasco, MPB, álbum, plataformas digitais, cantor, compositor">
-    <meta name="author" content="Gabriel Almeida">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#121212">
+    <!-- BOOTSTRAP CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- Performace -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="js/script.js"></script>
-
-
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
+    <!-- BOOTSTRAP ICONS  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- CSS -->
+    <!-- AOS.JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- LINK CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <!-- CABEÇALHO -->
     <header class="fixed-top">
 
-        <!-- up-side -->
-        <div class="up-side container d-flex flex-wrap justify-content-between align-items-center p-3 fw-semibold">
-            <div class="info-contact d-flex flex-wrap gap-3">
-                <div>
-                    <a href="mailto:felp.ar.oficial@gmail.com">
-                        <i class="bi bi-envelope"></i> felp.ar.oficial@gmail.com
-                    </a>
+        <!-- TOP MENU -->
+        <div class="top-bg">
+            <div class="up-side container d-flex flex-wrap justify-content-between align-items-center p-3 fw-semibold">
+                <div class="info-contact d-flex flex-wrap gap-1">
+                    <div>
+                        <a href="mailto:felp.ar.oficial@gmail.com" class="menu-superior-esquerdo">
+                            <i class="bi bi-envelope"></i> felp.ar.oficial@gmail.com
+                        </a>
+                    </div>
+
+                    <div>
+                        <span class="menu-superior-esquerdo">
+                            <i class="bi bi-geo-alt-fill"></i> Osasco | SP
+                        </span>
+                    </div>
                 </div>
 
-                <div>
-                    <i class="bi bi-geo-alt-fill"></i> Osasco | SP
-                </div>
-            </div>
+                <div class="social-media d-flex gap-4">
+                    <a href="https://www.instagram.com/felp.of?igsh=YjdrcjlkM3BjcTJ4&utm_source=qr" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
 
-            <div class="social-media d-flex gap-4">
-                <a href="https://www.tiktok.com/@felp.of?_t=ZM-90R6MUp1r1H&_r=1" target="_blank"><i
-                        class="bi bi-tiktok"></i></a>
-                <a href="https://www.instagram.com/felp.of?igsh=YjdrcjlkM3BjcTJ4&utm_source=qr" target="_blank"><i
-                        class="bi bi-instagram"></i></a>
-                <a href="https://www.youtube.com/@felp_of" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.youtube.com/@felp_of" target="_blank"><i class="bi bi-youtube"></i></a>
+
+                    <a href="https://www.tiktok.com/@felp.of?_t=ZM-90R6MUp1r1H&_r=1" target="_blank"><i
+                            class="bi bi-tiktok"></i></a>
+                </div>
             </div>
         </div>
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark container p-md-3 p-3">
-            <a class="navbar-brand fs-3 header-title" href="#home">Felp</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- FUNDO DA NAVBAR  -->
+        <div class="nav-bg">
+            <nav class="navbar navbar-expand-md navbar-dark container p-md-3 p-3">
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav fw-semibold text-center d-flex gap-3">
-                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#history">História</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#albuns">Álbuns</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#plataformas">Plataformas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                </ul>
+                <a class="navbar-brand fs-3 header-title fw-semibold " href="#home">Felp</a>
 
-                <div class="menu-contact text-center mt-3">
-                    <div class="d-flex flex-column gap-2">
-                        <a href="mailto:felp.ar.oficial@gmail.com" class="d-block">
-                            <i class="bi bi-envelope"></i> felp.ar.oficial@gmail.com
-                        </a>
-                        <div><i class="bi bi-geo-alt-fill"></i> Osasco | SP</div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fw-semibold text-center d-flex gap-4">
+                        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#history">História</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#albuns">Álbuns</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#plataformas">Plataformas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+
+                    <!-- MOBILE INFO -->
+                    <div class="menu-contact text-center mt-3 d-md-none">
+                        <div class="d-flex flex-column gap-2">
+                            <a href="mailto:felp.ar.oficial@gmail.com" class="d-block">
+                                <i class="bi bi-envelope"></i> felp.ar.oficial@gmail.com
+                            </a>
+                            <div><i class="bi bi-geo-alt-fill"></i> Osasco | SP</div>
+                        </div>
+
+                        <div class="social-media d-flex justify-content-center gap-3 mt-3">
+                            <a href="#"><i class="bi bi-tiktok"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
                     </div>
 
-                    <div class="social-media d-flex justify-content-center gap-3 mt-3">
-                        <a href="https://www.tiktok.com/@felp.of?_t=ZM-90R6MUp1r1H&_r=1" target="_blank">
-                            <i class="bi bi-tiktok"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/felp.of?igsh=YjdrcjlkM3BjcTJ4&utm_source=qr" target="_blank">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-
-                        <a href="https://www.youtube.com/@felp_of" target="_blank"><i class="bi     bi-youtube"
-                                id="youtube"></i>
-                        </a>
-                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <!-- MAIN -->
@@ -171,6 +161,10 @@
                             data-aos="zoom-in" data-aos-delay="360">
 
 
+                        <!-- ============================
+                                FUTUROS ALBUNS
+                        ================================= -->
+
                         <!-- <div class="links-streaming">
                             
                             <a href="https://open.spotify.com/intl-pt/album/3aBOwWmf9fG6CkzzaoSfxB?si=OaR4uDDkS3eX7XBArVMZdg"
@@ -210,7 +204,7 @@
                 <div class="row justify-content-center g-4">
                     <!-- Logo Spotify -->
                     <div class="col-6 col-lg-2">
-                        <a href="https://open.spotify.com/intl-pt/album/3aBOwWmf9fG6CkzzaoSfxB?si=SA654FdaQDSN8EfIdckz3A"
+                        <a href="https://open.spotify.com/intl-pt/album/0JxxzXDXc5kro816V9OQ2n?si=yfjFuTo5T0miPYdYl_v7vw"
                             class="card plataforma-card" target="_blank">
                             <div class="card-body">
                                 <img src="img/plataformas/spotify-logo.png" alt="Logo Spotify"
@@ -234,7 +228,7 @@
 
                     <!-- Logo Deezer -->
                     <div class="col-6 col-lg-2">
-                        <a href="https://www.deezer.com/br/album/822372521" class="card plataforma-card"
+                        <a href="https://www.deezer.com/br/album/843228682" class="card plataforma-card"
                             target="_blank">
                             <div class="card-body">
                                 <img src="img/plataformas/deezer-logo.png" alt="Logo Deezer"
@@ -246,7 +240,7 @@
 
                     <!-- Logo Amazon Music -->
                     <div class="col-6 col-lg-2">
-                        <a href="https://music.amazon.com/albums/B0FRB2G8NJ?ref=dm_ff_amazonmusic_3p&tag=featurefmbr-20"
+                        <a href="https://music.amazon.com/albums/B0FXHM9V6J?ref=dm_ff_amazonmusic_3p&tag=featurefmbr-20"
                             class="card plataforma-card" target="_blank">
                             <div class="card-body">
                                 <img src="img/plataformas/amazon-music-logo.png" alt="Logo Apple Music"
@@ -258,7 +252,7 @@
 
                     <!-- Logo Apple Music -->
                     <div class="col-6 col-lg-2">
-                        <a href="https://music.apple.com/br/album/in%C3%ADcio-meio-e-fim-vol-1-single/1840203509?at=11lqQE&ct=FFM_3b180f1632ad847316dec312dbf4b4a5&ls=1"
+                        <a href="https://music.apple.com/br/album/in%C3%ADcio-meio-e-fim-vol-1/1848633691"
                             class="card plataforma-card" target="_blank">
                             <div class="card-body">
                                 <img src="img/plataformas/apple-music-logo.png" alt="Logo Apple Music"
@@ -270,7 +264,7 @@
 
                     <!-- Logo Itunes -->
                     <div class="col-6 col-lg-2">
-                        <a href="https://music.apple.com/br/album/in%C3%ADcio-meio-e-fim-vol-1-single/1840203509"
+                        <a href="https://music.apple.com/br/album/in%C3%ADcio-meio-e-fim-vol-1/1848633691"
                             class="card plataforma-card" target="_blank">
                             <div class="card-body">
                                 <img src="img/plataformas/itune-logo.png" alt="Logo Itunes"
@@ -282,7 +276,7 @@
 
                     <!-- Logo Tidal -->
                     <div class="col-6 col-lg-2">
-                        <a href="https://tidal.com/album/461020552" class="card plataforma-card" target="_blank">
+                        <a href="https://tidal.com/album/468911125" class="card plataforma-card" target="_blank">
                             <div class="card-body">
                                 <img src="img/plataformas/tidal-logo.png" alt="Logo Tidal" class="plataforma-logo mb-3">
                                 <p>Tidal</p>
@@ -292,7 +286,7 @@
 
                     <!-- Logo Boomplay -->
                     <div class="col-6 col-lg-2">
-                        <a href="https://www.boomplay.com/albums/116437410?srModel=openapi_featurefm&ffm=FFM_443646075cfdec1191d1b5f2910c45fc"
+                        <a href="https://www.boomplay.com/albums/118441016?srModel=openapi_featurefm&ffm=FFM_4466cdebd27878d119171786fec0501d"
                             class="card plataforma-card" target="_blank">
                             <div class="card-body">
                                 <img src="img/plataformas/boomplay.png" alt="Logo Boomplay"
@@ -304,7 +298,7 @@
 
                     <!-- Logo Anghami -->
                     <div class="col-6 col-lg-2">
-                        <a href="https://play.anghami.com/album/1074753693?refer=featurefm&ffm=FFM_7cbaf7a83159c8bf3404c8fa0e7c9b83"
+                        <a href="https://play.anghami.com/album/1076681659?refer=featurefm&ffm=FFM_3d8ae7033a05c59a3324bfcc7883c03d"
                             class="card plataforma-card" target="_blank">
                             <div class="card-body">
                                 <img src="img/plataformas/anghami-logo.avif" alt="Logo Anghami"
@@ -394,24 +388,23 @@
 
     </main>
 
-
-
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS.js -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!-- AOS.JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init({
+            once: true
+        });
     </script>
 
 
-    <!-- JS -->
-    <script src="js/script.js"></script>
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+
 </body>
 
 </html>
